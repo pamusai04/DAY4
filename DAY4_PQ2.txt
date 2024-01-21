@@ -1,0 +1,29 @@
+Question 2
+import java.util.*;
+public class DAY4_PQ2 {
+	//write a program to find out whether a student is pass or fail : if it requires total 40% and at test 33% in each subject to pass. Assume 3 subjects and take markes as an input from the user
+
+	public static void main(String[] args) {
+		byte m1,m2,m3;
+		Scanner sc=new Scanner(System.in);
+
+		System.out.println("Enter your markes in Physics");
+		m1=sc.nextByte();
+
+		System.out.println("Enter your markes in Chemistry");
+		m2=sc.nextByte();
+
+		System.out.println("Enter your markes in Mathematics");
+		m3=sc.nextByte();
+		
+		float avg=(m1+m2+m3)/3.0f;
+		System.out.println("Your Overall percentage is :" + avg);
+		if(avg >= 40 && m1>33 && m2>33 && m3>33){
+			System.out.println("Congratulation, You have benn promoted");
+		}else{
+			System.out.println("Congratulation, You have not benn promoted! plese try again");
+		
+		}
+        	
+    }
+}
